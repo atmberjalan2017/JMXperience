@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.co.jmx.jmxperience">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="JMXperience"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginActivity"
+            android:label="LOGIN"
+            android:noHistory="true"/>
+        <activity android:name=".RegisterActivity"
+            android:label="REGISTER"
+            />
+        <activity android:name=".AgenActivity"
+            android:label="AGEN"
+            />
+        <activity android:name=".TarifActivity"
+            android:label="TARIF"
+            />
+        <activity android:name=".ServiceActivity"
+            android:label="LAYANAN"
+            />
+        <activity android:name=".TrackingActivity"
+            android:label="TRACKING"
+            />
+        <activity android:name=".HistoriActivity"
+            android:label="RIWAYAT TRANSAKSI"/>
+        <activity android:name=".ProfilActivity"
+            android:label="PROFIL"
+            />
+        <activity android:name=".KontakActivity"
+            android:label="KONTAK KAMI"
+            />
+        <activity android:name=".PickupActivity"
+            android:label="PICKUP ONLINE"
+            />
+    </application>
+
+</manifest>
